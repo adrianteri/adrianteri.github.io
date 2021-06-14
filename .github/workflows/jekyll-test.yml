@@ -1,0 +1,27 @@
+---
+
+name: Jekyll test with html-proofer.
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 5 * * 5"
+
+jobs:
+
+  Jekyll-Test:
+    name: html-proofer
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout codebase.
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby.
+        uses: actions/setup-ruby
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+
+      - name: Run tests.
+        run: ./test.sh
