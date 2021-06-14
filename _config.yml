@@ -1,0 +1,24 @@
+---
+
+name: Adrianteri's Jekyll github.io site
+
+# locations of things
+source: .
+destination: ./_site
+layouts_dir: ./_layouts
+includes_dir: ./_includes
+
+# Variables
+title: Adrian Teri
+
+
+# Handling Reading
+exclude             : ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+keep_files          : [".git", ".svn"]
+encoding            : "utf-8"
+markdown_ext        : "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+
