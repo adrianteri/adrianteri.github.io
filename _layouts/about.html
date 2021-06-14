@@ -1,0 +1,22 @@
+---
+layout: about
+---
+
+<!DOCTYPE html>
+	{% include header.html %}
+	<body>
+	  <main>
+	      <div class="profile-image">
+	                 <img alt="A potrait of Adrian Teri" width="200" height="200" src="{{"/assets/images/adrian-github-potrait.jpg" |  relative_url }}"></img>
+	      </div>
+		  <div class="intro">{{ page.title }}</div>
+		  <div class="tagline"> Gamer 🎮👾  || Student 📚🎓  || Tech enthusiast 🔌📡📶 || Software && DevOps Engineer 💻🛄🌐</div>
+		  <div class="icons-social">
+			  <a target="_blank" href="https://github.com/Adrianteri"><i class="fab fa-github"></i></a>
+			  <a target="_blank" href="https://gitlab.com/Adrianteri"><i class="fab fa-gitlab"></i></a>
+			  <a target="_blank" href="https://www.linkedin.com/in/adrianwanderi/"><i class="fab fa-linkedin"></i></a>
+			  <a target="_blank" href="https://medium.com/@adrianteri"><i class="fab fa-medium"></i></a>
+		  {% include footer.html %}
+	  </main>
+	</body>
+</html>
