@@ -1,7 +1,7 @@
 ---
 
-name: Build and Deploy Jekyll site to gh-pages branch.
-
+# Build-Deploy Jekyll site to gh-pages branch
+name: build-deploy.
 on:
   push:
     branches:
