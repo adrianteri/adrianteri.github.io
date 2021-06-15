@@ -1,0 +1,28 @@
+---
+
+name: Build and Deploy Jekyll site to gh-pages branch.
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitHub Checkout
+        uses: actions/checkout@v2
+
+      - name: Set up Ruby and Build site.
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+          bundler-cache: true
+
+      - name: Deploy to GitHub Pages.
+        uses: JamesIves/github-pages-deploy-action@4.1.4
+        with:
+          branch: gh-pages
+          folder: _site
