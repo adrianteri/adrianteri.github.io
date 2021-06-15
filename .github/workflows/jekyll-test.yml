@@ -1,6 +1,7 @@
 ---
 
-name: Jekyll test with html-proofer.
+# Jekyll test with html-proofer.
+name: Jekyll-test.
 
 on:
   push:
