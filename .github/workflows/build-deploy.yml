@@ -21,6 +21,9 @@ jobs:
           ruby-version: 2.7
           bundler-cache: true
 
+      - name: Build _site with Jekyll.
+        run: bundle exec jekyll build
+
       - name: Deploy to GitHub Pages.
         uses: JamesIves/github-pages-deploy-action@4.1.4
         with:
