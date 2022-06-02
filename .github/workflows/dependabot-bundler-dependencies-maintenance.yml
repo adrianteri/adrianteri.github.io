@@ -25,7 +25,7 @@ jobs:
         uses: dependabot/fetch-metadata@v1.3.1
         with:
           compat-lookup: true
-          github-token: "${{ secrets.DEPENDABOT_SECRET }}"
+          github-token: "${{ secrets.PAT_DEPENDABOT }}"
 
       - name: Get PR details
         run: |
@@ -44,3 +44,4 @@ jobs:
       - name: If compatibility score wasn't present or score is <90% assign and notify.
         if: ${{ failure() }} # Runs only if previous step failed or has been cancelled.
         run: gh pr edit "$PR_URL" --assignee "@me"
+
