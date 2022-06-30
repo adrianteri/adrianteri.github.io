@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: Fetch Dependabot PRs metadata
         id: dependabot-metadata
-        uses: dependabot/fetch-metadata@v1.3.1
+        uses: dependabot/fetch-metadata@v1.3.2
         with:
           compat-lookup: true
           github-token: "${{ secrets.PAT_DEPENDABOT }}"
