@@ -1,0 +1,7 @@
+# Robots.txt file for adrianteri.github.io
+
+User-agent: *
+Allow: /
+
+Crawl-delay: 10
+
